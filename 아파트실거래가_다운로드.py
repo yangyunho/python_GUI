@@ -77,7 +77,7 @@ combo_chosen3 = ttk.Combobox(
 )
 combo_chosen3["values"] = DEAL_YMD_list(200601, 202302)
 combo_chosen3.grid(row=1, column=3, sticky="W", padx=(0, 5), pady=(0, 5))
-combo_chosen3.current(0)
+combo_chosen3.current(2)
 value3 = combo3.get()
 
 
@@ -151,12 +151,11 @@ def lotto_p():
     import json
     import xmltodict
 
-    global value, value2, value3
-    print(value, value2, value3)
     #     service_key = os.environ.get('service_key')
     #     n = ent.get()
     #     service_key='6huNFddtUv7Ztnc%2B%2BuXOXO6MD%2F5q%2BISl4%2Fw7qzulYBlMFBt8pknpuKs2fibErcqXFmtKtWiFiD6EoJtNTnHHlg%3D%3D'
-    service_key = value
+    service_key = ent1.get()
+    service_key = service_key
     print("service_key", service_key)
     # lawd_cd = '48170'
     # deal_ymd = '202204'
